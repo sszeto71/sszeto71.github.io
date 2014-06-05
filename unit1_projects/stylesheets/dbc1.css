@@ -1,0 +1,8 @@
+/* page font */
+body {font: 16px "Comic Sans MS", cursive;}
+
+p {color: #333333}
+
+.movie {color: green;}
+
+#artist {color: red;}
