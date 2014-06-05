@@ -1,0 +1,17 @@
+/* page font */
+body {font: 16px "Comic Sans MS", cursive;}
+
+h1, h3, h4, h5, h6 {
+  color: #009900;
+  font-family: Georgia, sans-serif;
+}
+
+h2 {
+  color: blue;
+  font-family: Georgia, sans-serif;
+}
+
+li {font-weight: bold;}
+
+p {color: red;}
+
