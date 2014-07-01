@@ -1,7 +1,7 @@
 /* page font */
 body {font: 16px "Comic Sans MS", cursive;}
 
-h1, h3, h4, h5, h6 {
+h1, h4, h5, h6 {
   color: #009900;
   font-family: Georgia, sans-serif;
 }
@@ -9,6 +9,12 @@ h1, h3, h4, h5, h6 {
 h2 {
   color: blue;
   font-family: Georgia, sans-serif;
+}
+
+h3 {
+  color: black;
+  font-family: Georgia, sans-serif;
+  font-size: 18px;
 }
 
 li {font-weight: bold;}
