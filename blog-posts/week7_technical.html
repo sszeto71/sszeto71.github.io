@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SQL Technical Review Blog</title>
+    <link rel="stylesheet" href="./stylesheets/stylesheet.css" type="text/css"> 
+  </head>
+  <body>
+    <h1><b>SQL Technical Review</b></h1>
+    <h2><i>Explain SQL injection and identify ways to prevent it</i></h2>
+    <ul>
+    <li>What is SQL Injection?</li>
+    <ul>
+    <li>SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker).</li>
+    <li>SQL injection is an attack in which malicious code is inserted into strings that are later passed to an instance of SQL Server for parsing and execution.</li>
+    <li>The primary form of SQL injection consists of direct insertion of code into user-input variables that are concatenated with SQL commands and executed. A less direct attack injects malicious code into strings that are destined for storage in a table or as metadata. When the stored strings are subsequently concatenated into a dynamic SQL command, the malicious code is executed.</li>
+    <li>SQL Injection is simply a term describing the act of passing SQL code into an application that was not intended by the developer.</li>
+    </ul>        
+    <li>Issues with SQL (specifically SQL Injection</li>
+    <ul>
+    <li>A successful SQL injection exploit can read sensitive data from the database, modify database data (Insert/Update/Delete), execute administration operations on the database (such as shutdown the DBMS), recover the content of a given file present on the DBMS file system and in some cases issue commands to the operating system.</li>
+    <li>SQL Injection is one of the many web attack mechanisms used by hackers to steal data from organizations. It is perhaps one of the most common application layer attack techniques used today. It is the type of attack that takes advantage of improper coding of your web applications that allows hacker to inject SQL commands into say a login form to allow them to gain access to the data held within your database.</li>
+    </ul> 
+    <li>What can new programmers do to combat or prevent this issue?</li>
+    <ul>
+    <li>There are two complementary and successful methods of mitigating SQL Injection attacks: 1) Parameterized queries using bound, typed parameters, 2) Careful use of parameterized stored procedures., and 3) escaping all user supplied input.</li>
+    <li>Additonal defenses against SQL injection includes the following: 1) enforce least privilege and 2) perform white list input validation</li>
+    </ul>  
+    </ul>
+
+    <!-- Compare SQL databases with NoSQL databases --> 
+    <h2><i>Compare SQL databases with NoSQL databases</i></h2>
+    <ul>
+    <li>What are the pros and cons of either?</li>
+    <ul>
+    <li>SQL database model provides a logically structure the data that is being managed, whereas NoSQL database model provides a much more freely shaped way of working with information, thus providing a great deal of flexibility and ease.</li>
+    <li>SQL database provides a relational model offers a very mathematically-adapt way of structuring, keeping, and using the data</li>
+    <li>The NoSQL way of structuring the data consists of getting rid of these constraints, hence liberating the means of keeping, querying, and using information. NoSQL databases, by using an unstructured (or structured-on-the-go) kind of approach, aim to eliminate the limitations of strict relations, and offer many different types of ways to keep and work with the data for specific use cases efficiently (e.g. full-text document storage).</li>
+    <li>NoSQL, or 'Not Only SQL', represents the new class of data management technologies designed to meet the increasing volume, velocity, and variety of data that organizations are storing, processing, and analyzing.  Compared to relational databases, NoSQL databases are more scalable and provide superior performance.</li>
+    <li>Relational and NoSQL data models are very different. The relational model takes data and separates it into many interrelated tables that contain rows and columns. Tables reference each other through foreign keys that are stored in columns as well.  NoSQL databases have a very different model. For example, a document-oriented NoSQL database takes the data you want to store and aggregates it into documents using the JSON format. Each JSON document can be thought of as an object to be used by your application. A JSON document might, for example, take all the data stored in a row that spans 20 tables of a relational database and aggregate it into a single document/object. Aggregating this information may lead to duplication of  information, but since storage is no longer cost prohibitive, the resulting data model flexibility, ease of efficiently distributing the resulting documents and read and write performance improvements make it an easy trade-off for web-based applications.</li>
+    <li>Popular examples of SQL databases include: SQLite, MySQL, Oracle DB, PostgreSQL</li>
+    <li>Popular examples of NoSQL databases include: MongoDB, big data, such as Hadoop and Cassandra</li>
+    <li>Advantages of NoSQL database include</li>
+    <ul>
+    <li>NoSQL databases generally process data faster than relational databases.</li>    
+    <li>NoSQL databases are also often faster because their data models are simpler.</li>
+    <li>Major NoSQL systems are flexible enough to better enable developers to use the applications in ways that meet their needs.</li>
+    <li>NoSQL databases scale better than typical relational SQL database and are less expensive.</li>
+    </ul>    
+    </ul>    
+    <li>Which are you most excited to work with and why?</li>
+    <ul>
+    <li>I am relatively familar with relational SQL database, such as Oracle and MySQL.  Thus, I am more excited to learn and work with NoSQL databases since many of the top companies, such as Facebook and Google, are now using NoSQL databases, such as Hadoop.</li>
+    </ul>             
+    </ul>
+
+    <!-- optimize SQL queries --> 
+    <h2><i>Techniques on Optimizing SQL Queries</i></h2>
+    <ul>
+    <li>Apply and create indexes on columns that you query the most to speed up the data retrieval.</li>
+    <li>Avoid unnecessary columns in the SELECT list and unnecessary tables in join conditions.</li>
+    <li>Do pull only the number of columns you need</li>
+    </ul>   
+
+  </body>
+</html>
